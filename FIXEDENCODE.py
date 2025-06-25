@@ -4227,7 +4227,7 @@ class APKProtector:
             'protection_level': 'HIGH'
         }
     
-    def protect_apk(self, options: dict = None) -> Tuple[bool, str]:
+    async def protect_apk(self, options: dict = None) -> Tuple[bool, str]:
         """Main APK protection method"""
         start_time = time.time()
         
