@@ -1,4 +1,4 @@
-from FIXEDENCODE_READYY import main
+from FIXER import main
 import nest_asyncio
 import asyncio
 
