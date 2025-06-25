@@ -2438,7 +2438,7 @@ class TelegramBotManager:
     """Advanced Telegram Bot Manager for APK Protection"""
     
     def __init__(self):
-        self.apk_protector = APKProtector()
+        # self.apk_protector = APKProtector()  # Delayed instantiation based on user input
         self.active_sessions = {}  # Store user sessions
         self.rate_limiter = defaultdict(list)  # Rate limiting
         self.upload_progress = {}  # Track upload progress
