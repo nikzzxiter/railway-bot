@@ -55,7 +55,7 @@ logger = logging.getLogger(__name__)
 
 # Railway Configuration
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-WEBHOOK_URL = os.getenv("WEBHOOK_URL", "")
+WEBHOOK_URL = os.getenv("https://nikzzbotwa", "")
 PORT = int(os.getenv("PORT", 8000))
 MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB
 TIMEOUT_SECONDS = 300  # 5 minutes
