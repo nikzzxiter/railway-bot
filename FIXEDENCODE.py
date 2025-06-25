@@ -5690,7 +5690,9 @@ class AntiAnalysisEngine:
             'hook_detection',
             'tamper_detection',
             'time_manipulation_detection'
-        ](self.countermeasures) = [
+        ]
+
+        self.countermeasures = [
             'code_obfuscation',
             'control_flow_flattening',
             'dummy_code_injection',
