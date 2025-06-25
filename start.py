@@ -1,4 +1,4 @@
-from FIXEDENCODE_READY import main
+from FIXEDENCODE_READYY import main
 import nest_asyncio
 import asyncio
 
