@@ -1,0 +1,8 @@
+python-telegram-bot==20.7
+httpx==0.25.2
+psutil==5.9.6
+cryptography==41.0.7
+lxml==4.9.3
+Pillow==10.1.0
+pycryptodome==3.19.0
+androguard==3.4.0
