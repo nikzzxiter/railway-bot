@@ -1,2 +1,2 @@
-worker: python FIXEDENCODE.py
+worker: python FIXEDENCODE_READY.py
 
