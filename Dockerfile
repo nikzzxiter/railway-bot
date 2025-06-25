@@ -1,23 +1,23 @@
-# Gunakan base image Python resmi
+# Gunakan Python slim (ringan)
 FROM python:3.10-slim
 
-# Install library OS yang dibutuhkan
+# Install libmagic dan library sistem lain yang dibutuhkan
 RUN apt-get update && apt-get install -y \
+    libmagic-dev \
     gcc \
+    build-essential \
     libxml2-dev \
     libxslt1-dev \
-    libmagic1 \
-    libmagic-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Atur direktori kerja
+# Set direktori kerja
 WORKDIR /app
 
-# Copy semua file ke container
+# Copy semua file
 COPY . .
 
-# Install semua module Python
-RUN pip install --upgrade pip && pip install -r requirements.txt
+# Install dependencies Python
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Jalankan file utama
+# Jalankan bot
 CMD ["python", "start.py"]
